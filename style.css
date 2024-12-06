@@ -1,0 +1,5 @@
+body {
+  margin 0; /*Makes sure there isn't a gap outside of body tag and edge of the page.*/
+  box-sizing: border-box; 
+  background-color: blanchedalmond;
+}
