@@ -1,5 +1,38 @@
 body {
-  margin 0; /*Makes sure there isn't a gap outside of body tag and edge of the page.*/
-  box-sizing: border-box; 
+  margin: 0; /*Makes sure there isn't a gap outside of body tag and edge of the page*/
   background-color: blanchedalmond;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px 1fr 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+}
+
+nav div {
+  background-color: rgb(164, 187, 173);
+  margin: 15px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 0 10px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid burlywood;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section > div {
+  background-color: burlywood;
+  border: 3px solid rgb(164, 187, 173);
+}
+
+section {
+  display: flex;
 }
