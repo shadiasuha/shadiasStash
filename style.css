@@ -1,5 +1,4 @@
 body {
-  margin 0;
   box-sizing: border-box;
   height: 100vh;
   font-family: 'Delius', cursive;
@@ -23,12 +22,12 @@ nav div {
   border-radius: 0 10px 0 10px;
   font-size: 18px;
   font-weight: bold;
-  border: 3px solid burlywood;
+  border: 3px solid goldenrod;
   font-family: 'Delius', cursive;
 }
 
 section > div {
-  background-color: burlywood;
+  background-color: goldenrod;
   border: 3px solid rgb(164, 187, 173);
 }
 
@@ -38,13 +37,23 @@ h1 {
 }
 .imageGridContainer {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 div > div {
-  border: 1px solid rgb(164, 187, 173);
+  border: 1px solid burlywood;
   padding: 20px;
+}
+.ImageGridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.ImageGridItem img {
+  width: 350px;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
 }
