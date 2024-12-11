@@ -1,11 +1,10 @@
 body {
+  margin 0;
+  box-sizing: border-box;
+  height: 100vh;
   font-family: 'Delius', cursive;
   font-size: 24px;
   background-color: blanchedalmond;
-  box-sizing: border-box;
-  display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 75px 1fr 50px;*/
 }
 
 nav {
@@ -36,4 +35,16 @@ section > div {
 h1 {
   font-family: 'Delius', cursive;
   font-size: 32pt;
+}
+.imageGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+}
+
+div > div {
+  border: 1px solid rgb(164, 187, 173);
+  padding: 20px;
+
 }
