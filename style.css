@@ -2,11 +2,18 @@ body {
   box-sizing: border-box;
   height: 100vh;
   font-family: 'Delius', cursive;
-  font-size: 24px;
+  font-size: 30px;
   background-image: url(./backgroundWithPattern.png);
-  background-color: rgb(255, 235, 205);
 }
 
+h1 {
+  font-family: 'WindSong', cursive;
+  font-size: 60pt;
+  color: goldenrod;
+  -webkit-text-stroke: 1px black;
+}
+
+/*Navigation Bar Start*/
 nav {
   display: flex;
   flex-direction: row;
@@ -14,7 +21,6 @@ nav {
   height: 75px;
   width: 100%;
 }
-
 nav div {
   background-color: rgb(164, 187, 173);
   margin: 15px;
@@ -26,26 +32,21 @@ nav div {
   border: 3px solid goldenrod;
   font-family: 'Delius', cursive;
 }
-
 section > div {
   background-color: goldenrod;
   border: 3px solid rgb(164, 187, 173);
 }
+/*Navigation Bar End*/
 
-h1 {
-  font-family: 'WindSong', cursive;
-  font-size: 60pt;
-  color: rgb(164, 187, 173);
-  -webkit-text-stroke: 1px black;
-}
+/*Image Grid Start*/
 .imageGridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 div > div {
   border: 1px solid burlywood;
+  border-radius: 20px 20px 20px 20px;
   padding: 20px;
 }
 .ImageGridItem {
@@ -53,10 +54,10 @@ div > div {
   justify-content: center;
   align-items: center;
 }
-
 .ImageGridItem img {
   width: 350px;
   height: 400px;
   object-fit: contain;
   object-position: center;
 }
+/*Image Grid End*/
