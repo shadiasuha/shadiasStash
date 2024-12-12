@@ -32,8 +32,10 @@ section > div {
 }
 
 h1 {
-  font-family: 'Delius', cursive;
-  font-size: 32pt;
+  font-family: 'WindSong', cursive;
+  font-size: 60pt;
+  color: rgb(164, 187, 173);
+  -webkit-text-stroke: 1px black;
 }
 .imageGridContainer {
   display: grid;
